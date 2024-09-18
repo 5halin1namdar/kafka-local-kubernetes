@@ -61,6 +61,7 @@ spec:
       spec:
         accessModes:
           - ReadWriteOnce
+        storageclassName: sc-ontap-nas
         resources:
           requests:
             storage: 1Gi

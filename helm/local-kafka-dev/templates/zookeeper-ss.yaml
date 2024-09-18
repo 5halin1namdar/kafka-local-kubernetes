@@ -46,14 +46,16 @@ spec:
       spec:
         accessModes:
           - ReadWriteOnce
+        storageClassName: sc-ontap-nas
         resources:
           requests:
-            storage: 250Mi
+            storage: 1Gi
     - metadata:
         name: zookeeper-log
       spec:
         accessModes:
           - ReadWriteOnce
+        storageClassName: sc-ontap-nas
         resources:
           requests:
-            storage: 250Mi
+            storage: 1Gi
